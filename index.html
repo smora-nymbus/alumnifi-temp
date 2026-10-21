@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Back soon | CLIENT NAME</title>
+  <style>
+    :root {
+      --bg: #f4f6f9;
+      --surface: #ffffff;
+      --text: #1b2430;
+      --muted: #526071;
+      --border: #d6dce4;
+      --accent: #1d4f8c;
+      --accent-text: #ffffff;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #131820;
+        --surface: #1b222c;
+        --text: #eef2f7;
+        --muted: #a5b0be;
+        --border: #2f3948;
+        --accent: #7fb0ec;
+        --accent-text: #0e1722;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      width: 100%;
+      max-width: 560px;
+      padding: 48px 40px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+    /* Logo container: replace the placeholder with <img src="logo.png" alt="Client name"> */
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 72px;
+      margin: 0 auto 32px;
+      border: 1px dashed var(--border);
+      border-radius: 6px;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+    .logo img { max-width: 100%; max-height: 100%; display: block; }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 1.75rem;
+      line-height: 1.25;
+      font-weight: 650;
+    }
+    p { margin: 0 0 16px; color: var(--muted); }
+    .phone {
+      margin: 28px 0 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .phone span { display: block; font-size: 0.875rem; color: var(--muted); }
+    .phone a {
+      color: var(--text);
+      font-size: 1.375rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .phone a:hover { text-decoration: underline; }
+    .cta {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--accent);
+      color: var(--accent-text);
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .cta:hover { opacity: 0.9; }
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+    @media (max-width: 480px) {
+      main { padding: 36px 24px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo">
+      <!-- Replace with: <img src="logo.png" alt="CLIENT NAME"> -->
+      Logo
+    </div>
+    <h1>We'll be right back</h1>
+    <p>Our website is briefly offline while we complete a security update. Your accounts and information are not affected by this maintenance.</p>
+    <p>We expect to be back soon. Thank you for your patience.</p>
+    <div class="phone">
+      <span>Need help now? Call us</span>
+      <a href="tel:+15555550100">(555) 555-0100</a>
+    </div>
+    <!-- Replace href="#" with the final link (to be determined) -->
+    <a class="cta" href="#">Contact us</a>
+  </main>
+</body>
+</html>
